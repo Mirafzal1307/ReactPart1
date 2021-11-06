@@ -462,8 +462,8 @@
 //   )
 // }
 // export default App
-import React from "react";
-import { useState } from "react";
+// import React from "react";
+// import { useState } from "react";
 // const App = () => {
 //   const [left, setLeft] = useState(0)
 //   const [right, setRight] = useState(0)
@@ -529,7 +529,7 @@ import { useState } from "react";
 //     }
 //     setClicks(newClicks)
 //   }
-  
+
 //   const handleRightClick = () => {
 //     const newClicks = { 
 //       ...clicks, 
@@ -568,57 +568,284 @@ import { useState } from "react";
 //     <div>
 //       {left}
 //       <button onClick={handleLeftClick}>left</button>
-   
+
 //       <button onClick={handleRightClick}>right</button>
 //       {right}
 //       <p>{allClicks.join('')}</p>
 //     </div>
 //   )
 // }
-const History = (props) => {
-  if (props.allClicks.length === 0) {
+// const History = (props) => {
+//   if (props.allClicks.length === 0) {
+//     return (
+//       <div>
+//         the app is used by pressing the buttons
+//       </div>
+//     )
+//   }
+//   return (
+//     <div>
+//       button press history: {props.allClicks.join(' ')}
+//     </div>
+//   )
+// }
+
+// const App = () => {
+//   const [left, setLeft] = useState(0)
+//   const [right, setRight] = useState(0)
+//   const [allClicks, setAll] = useState([])
+
+//   const handleLeftClick = () => {
+//     setAll(allClicks.concat('L'))
+//     setLeft(left + 1)
+//   }
+
+//   const handleRightClick = () => {
+//     setAll(allClicks.concat('R'))
+//     setRight(right + 1)
+//   }
+
+
+//   return (
+//     <div>
+//       {left}
+//       <button onClick={handleLeftClick}>left</button>
+//       <button onClick={handleRightClick}>right</button>
+//       {right}
+//       <History allClicks={allClicks} />
+//     </div>
+//   )
+// }
+
+
+
+// const History = (props) => {
+//   if (props.allClicks.length === 0) {
+//     return (
+//       <div>
+//         the app is used by pressing the buttons
+//       </div>
+//     )
+//   }
+
+//   return (
+//     <div>
+//       button press history: {props.allClicks.join(' ')}
+//     </div>
+//   )
+// }
+
+
+// const App = () => {
+//   const [left, setLeft] = useState(0)
+//   const [right, setRight] = useState(0)
+//   const [allClicks, setAll] = useState([])
+
+//   const handleLeftClick = () => {
+//     setAll(allClicks.concat('L'))
+//     setLeft(left + 1)
+//   }
+
+//   const handleRightClick = () => {
+//     setAll(allClicks.concat('R'))
+//     setRight(right + 1)
+//   }
+
+//   return (
+//     <div>
+//       {left}
+//       <Button handleClick={handleLeftClick} text='left' />
+//       <Button handleClick={handleRightClick} text='right' />
+//       {right}
+//       <History allClicks={allClicks} />
+//     </div>
+//   )
+// }
+
+// const Button = (props) => { 
+//   console.log(props)
+//   console.log('props value is' , props)
+//   console.log('props value is ' + props)
+//   const { onClick, text } = props
+//   return (
+//     <button onClick={onClick}>
+//       {text}
+//     </button>
+//   )
+// }
+
+
+
+// export default App
+// import React, { Component } from 'react';
+// import { connect } from 'react-redux';
+
+// function mapStateToProps(state) {
+//   return {
+
+//   };
+// }
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+
+//       </div>
+//     );
+//   }
+// }
+
+// export default connect(
+//   mapStateToProps,
+// )(App);
+
+// import React, { Component } from 'react';
+// // import { connect } from 'react-redux';
+
+// function mapStateToProps(state) {
+//   return {
+
+//   };
+// }
+
+// function mapDispatchToProps(dispatch) {
+//   return {
+
+//   };
+// }
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         hhjhgjh
+//       </div>
+//     );
+//   }
+// }
+
+// export default connect(
+//   mapStateToProps,
+// )(App);
+// import React, { Component } from 'react'
+
+//  class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <p>
+//           hgjdkfghdlfghdlfgvdflkgjhdlkfjgdlkfgjdkf;ljglkdf
+//                   </p>
+//       </div>
+//     )
+//   }
+// }
+// export default App 
+// import React, { Component } from 'react';
+// import { connect } from 'react-redux';
+
+// function mapStateToProps(state) {
+//   return {
+
+//   };
+// }
+
+// function mapDispatchToProps(dispatch) {
+//   return {
+
+//   };
+// }
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+
+//       </div>
+//     );
+//   }
+// }
+
+// export default connect(
+//   mapStateToProps,
+// )(App);
+
+
+import React from 'react'
+
+// const App = (props) => {
+//   const { notes } = props
+
+//   return (
+//     <div>
+//       <h1>Notes</h1>
+//       <ul>
+//         <li>{notes[0].date}</li>
+//         <li>{notes[1].date}</li>
+//         <li>{notes[2].date}</li>
+//       </ul>
+//     </div>
+//   )
+// }
+// const App = (props) => {
+//     const { notes } = props
+
+//     return (
+//         <div>
+//             <h1>Notes</h1>
+//             <ul>
+//                 {notes.map(note =>
+//                     <li>
+//                         {note.content}
+//                     </li>
+//                 )}
+//             </ul>
+//         </div>
+//     )
+// }
+// const numbers = [1, 2, 3, 4, 5];
+// const listItems = numbers.map((number) =>
+//     <li key={number.toString()}>
+//         {number}
+//     </li>
+// )
+// const App = (props) => {
+//     const { notes } = props
+//     const result = notes.map(note => note.id)
+//     console.log(result)
+//     return (
+//       <div>
+//         <h1>Notes</h1>
+//         <ul>
+//           {notes.map(note => 
+//             <li key={note.id}>
+//               {note.content}
+//             </li>
+//           )}
+//         </ul>
+//       </div>
+//     )
+//   }
+
+const Note = ({ note }) => {
+    return (
+      <li>{note.content}</li>
+    )
+  }
+  
+  const App = ({ notes }) => {
     return (
       <div>
-        the app is used by pressing the buttons
+        <h1>Notes</h1>
+        <ul>
+          {notes.map(note => 
+            <Note key={note.id} note={note} />
+          )}
+        </ul>
       </div>
     )
   }
-  return (
-    <div>
-      button press history: {props.allClicks.join(' ')}
-    </div>
-  )
-}
+  
 
-const App = () => {
-  const [left, setLeft] = useState(0)
-  const [right, setRight] = useState(0)
-  const [allClicks, setAll] = useState([])
-
-  const handleLeftClick = () => {
-    setAll(allClicks.concat('L'))
-    setLeft(left + 1)
-  }
-
-  const handleRightClick = () => {
-    setAll(allClicks.concat('R'))
-    setRight(right + 1)
-  }
-
-
-  return (
-    <div>
-      {left}
-      <button onClick={handleLeftClick}>left</button>
-      <button onClick={handleRightClick}>right</button>
-      {right}
-      <History allClicks={allClicks} />
-    </div>
-  )
-}
-
-
-
-
-
-export default App
+export default App 
